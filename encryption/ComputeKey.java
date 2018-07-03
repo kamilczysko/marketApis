@@ -34,15 +34,9 @@ public class ComputeKey {
 		} catch (InvalidKeyException e) {
 			e.printStackTrace();
 		}
-		
+
 		return null;
 	}
 
-	public static void main(String[] args) throws Exception {
-		String secret = "0bb609ca8a8d4ca195dec3f3ed53b3fa";
-		String txt = "https://bittrex.com/api/v1.1/account/getbalances?apikey=3bb70a1c954f4ce0ba1216c754839259&nonce=1515953162";
-		String hmac = calculateHMAC(txt , secret);
-		System.out.println(hmac);
-	}
 
 }
